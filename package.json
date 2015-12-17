@@ -1,0 +1,32 @@
+{
+  "name": "grunt-fetch-browscap",
+  "version": "0.0.1",
+  "description": "Grunt-Task, fetches the latest browscap.ini file and deploys it to a local directory",
+  "main": "tasks/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skalio/grunt-fetch-browscap.git"
+  },
+  "keywords": [
+    "grunt",
+    "browscap",
+    "browscap.ini"
+  ],
+  "author": {
+    "name": "Henning Verbeek",
+    "email": "hv@skalio.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skalio/grunt-fetch-browscap/issues"
+  },
+  "homepage": "https://github.com/skalio/grunt-fetch-browscap#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.3"
+  },
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "request": "^2.67.0"
+  }
+}
