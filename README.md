@@ -35,8 +35,10 @@ object passed into `grunt.initConfig()`.
 grunt.initConfig({
 	"fetch-browscap": {
 		your_target : {
-			destination: "target/browscap.ini",
-			version: "Lite_PHP_BrowsCapINI"
+			options: {
+				destination: "target/browscap.ini",
+				version: "Lite_PHP_BrowsCapINI"
+			}
 		}
 	}
 });
@@ -44,13 +46,13 @@ grunt.initConfig({
 
 ### Options
 
-#### destination
+#### options.destination
 Type: `String`
 Default value: `target/browscap.ini`
 
 The destination where the file will be downloaded to.
 
-#### version
+#### options.version
 Type: `String`
 Default value: `Lite_PHP_BrowsCapINI`
 
@@ -74,8 +76,9 @@ permanent bans.
 
 ## Todo
 
-  * Store version number when downloading INI files, compare against current version number.
+  * Store version number along INI file, compare against current version number before downloading.
 
 ## Changelog
 
+  * 2015-12-17   v0.1.1: documentation fix
   * 2015-12-17   v0.1.0: initial version, not intended for public release

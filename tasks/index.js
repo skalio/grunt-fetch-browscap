@@ -31,6 +31,13 @@ module.exports = function (grunt) {
 			file.end();
 			done();
 		});
+		
+		remote.on('error', function(e) {
+			grunt.log.error('Got error: '+ e.message);
+			file.end();
+			done(false);
+		});
+		
 	}
 	
 	var fetchBrowscapTask = function fetchBrowscapTask() {

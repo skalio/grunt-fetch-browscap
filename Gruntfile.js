@@ -15,8 +15,15 @@ module.exports = function (grunt) {
 		},
 		"fetch-browscap": {
 			"lite-php": {
-				destination: "target/browscap.ini",
-				version: "Lite_PHP_BrowsCapINI"
+				options: {
+					destination: "target/lite-php-browscap.ini"
+				}
+			},
+			"json": {
+				options: {
+					destination: "target/browscap.json",
+					version: "BrowsCapJSON"
+				}
 			}
 		}
 	});
