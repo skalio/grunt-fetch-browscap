@@ -19,12 +19,14 @@ module.exports = function (grunt) {
 					destination: "target/lite-php-browscap.ini"
 				}
 			},
+			/*
 			"json": {
 				options: {
 					destination: "target/browscap.json",
 					version: "BrowsCapJSON"
 				}
 			}
+			*/
 		}
 	});
 

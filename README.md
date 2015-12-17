@@ -37,7 +37,8 @@ grunt.initConfig({
 		your_target : {
 			options: {
 				destination: "target/browscap.ini",
-				version: "Lite_PHP_BrowsCapINI"
+				version: "Lite_PHP_BrowsCapINI",
+				versionNumberDestination: "build/browscap.version"
 			}
 		}
 	}
@@ -69,16 +70,22 @@ The type of browscap.ini-file you are interested in. Supported values are:
 * `BrowsCapJSON`: This is a JSON (JavaScript Object Notation) version of browscap.ini. This is usually used with JavaScript.
 * `BrowsCapZIP`: This archive combines all the above files into one download that is smaller than all eight files put together.
 
+## options.versionNumberDestination
+Type: `String`
+Default value: `target/browscap.version`
+
+Refers to a filename that caches the downloaded version. Its contents are compared
+against [browscap.org/version-number](http://browsecap.org/version-number) to 
+determine if a file is to be downloaded.
+
 ## Rate Limiting
 Be aware that downloading the INI files from [browscap.org](http://browscap.org) implies
 agreeing to their fair usage policy. Repeat downloads may lead to temporary or
 permanent bans.
 
-## Todo
-
-  * Store version number along INI file, compare against current version number before downloading.
 
 ## Changelog
 
+  * 2015-12-17   v0.2.0: caches the version-number
   * 2015-12-17   v0.1.1: documentation fix
   * 2015-12-17   v0.1.0: initial version, not intended for public release
