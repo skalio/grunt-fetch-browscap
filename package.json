@@ -1,6 +1,6 @@
 {
   "name": "grunt-fetch-browscap",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Grunt-Task, fetches the latest browscap.ini file and deploys it to a local directory",
   "main": "tasks/index.js",
   "repository": {
